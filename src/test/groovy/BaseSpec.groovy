@@ -259,7 +259,7 @@ abstract class BaseSpec extends Specification {
      * 	current operating system.
      */
     def createCommand(String pathHome, String binaryName) {
-        "${pathHome}${File.separator}bin${File.separator}${binaryName}${isWindows() ? '.bat' : '.sh'}"
+        "${pathHome}${File.separator}bin${File.separator}${binaryName}${isWindows() ? '.bat' : ''}"
     }
 
     /**
